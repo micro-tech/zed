@@ -460,7 +460,8 @@ fn initialize_panels(
         let is_assistant2_enabled = if cfg!(test) {
             false
         } else {
-            assistant2_feature_flag.await
+            true
+            //assistant2_feature_flag.await
         };
 
         let (assistant_panel, assistant2_panel) = if is_assistant2_enabled {
