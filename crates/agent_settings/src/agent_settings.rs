@@ -340,6 +340,7 @@ impl JsonSchema for LanguageModelProviderSetting {
                 "openrouter".into(),
                 "mistral".into(),
                 "vercel".into(),
+                "x_ai".into(),
             ]),
             ..Default::default()
         }

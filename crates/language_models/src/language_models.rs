@@ -20,8 +20,8 @@ use crate::provider::ollama::OllamaLanguageModelProvider;
 use crate::provider::open_ai::OpenAiLanguageModelProvider;
 use crate::provider::open_router::OpenRouterLanguageModelProvider;
 use crate::provider::vercel::VercelLanguageModelProvider;
-pub use crate::settings::*;
 use crate::provider::x_ai::XaiLanguageModelProvider;
+pub use crate::settings::*;
 
 pub fn init(user_store: Entity<UserStore>, client: Arc<Client>, cx: &mut App) {
     crate::settings::init(cx);
